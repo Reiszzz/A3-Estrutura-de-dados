@@ -1,4 +1,13 @@
-# Documentacao Unificada - Sistema de Suporte Tecnico de Informatica
+# Documentacao - Sistema de Suporte Tecnico de Informatica
+
+Autores:
+```text
+
+Heloisa Soares Ferreira - RA 824152581
+João Vitor Cordeiro Lopes - RA 82429891
+Kauan Reis dos Santos- RA 824124128
+
+```
 
 ## 1. Visao geral
 
