@@ -394,46 +394,6 @@ Permite buscar chamado por ID.
 
 A busca usa a Arvore Binaria, e a tela tambem lista todos os chamados ordenados por ID.
 
-## 6. Fluxo principal do sistema
-
-Fluxo recomendado para demonstracao:
-
-1. Abrir o sistema.
-2. Mostrar os usuarios ja carregados.
-3. Mostrar os chamados aguardando na fila.
-4. Clicar em `Atender proximo`.
-5. Conferir os dados do chamado.
-6. Preencher a descricao de fechamento.
-7. Clicar em `Fechar chamado`.
-8. Mostrar o chamado no historico.
-9. Buscar o chamado pelo ID.
-10. Mostrar o Dashboard atualizado.
-
-## 7. Como compilar e executar
-
-Compilar:
-
-```powershell
-javac -Xlint:serial -d out src\a3\nicolas\*.java src\a3\nicolas\model\*.java src\a3\nicolas\model\enums\*.java src\a3\nicolas\estruturas\*.java src\a3\nicolas\controller\*.java src\a3\nicolas\view\*.java src\a3\nicolas\view\panels\*.java
-```
-
-Executar:
-
-```powershell
-java -cp out a3.nicolas.Main
-```
-
-## 8. Pontos importantes para explicar na apresentacao
-
-### Por que MVC?
-
-MVC ajuda a separar responsabilidades:
-
-- Model guarda dados.
-- Controller aplica regras.
-- View mostra a interface e captura eventos.
-
-Isso deixa o projeto mais organizado e facilita manutencao.
 
 ### Onde cada estrutura aparece?
 
@@ -457,31 +417,3 @@ Eles ajudam na demonstracao, evitando gastar tempo cadastrando tudo ao vivo.
 Ela deixa o fechamento mais parecido com sistemas reais de suporte, como Jira, GLPI ou ServiceNow.
 
 O tecnico nao apenas fecha o chamado: ele registra a solucao aplicada ou a observacao final.
-
-## 9. Melhorias e correcoes feitas
-
-Durante a revisao do projeto, foram feitos ajustes para deixar a demonstracao mais segura:
-
-- O menu lateral foi corrigido para ter exatamente a quantidade de linhas necessaria.
-- O Dashboard passou a mostrar o ultimo chamado somente depois do fechamento.
-- O sistema impede atender outro chamado antes de fechar o atual.
-- O fechamento exige uma descricao de solucao.
-- As telas Swing receberam `serialVersionUID`.
-- Campos nao serializaveis da View foram marcados como `transient`.
-- A compilacao com `-Xlint:serial` passou sem warnings.
-
-## 10. Conclusao
-
-O sistema atende aos requisitos propostos:
-
-- Foi desenvolvido em Java.
-- Esta relacionado ao suporte tecnico de informatica.
-- Usa Fila, Pilha, Lista Ligada e Arvore Binaria.
-- Permite cadastro de usuarios.
-- Permite criacao de chamados tecnicos.
-- Permite atendimento, fechamento e historico de chamados.
-- Permite consulta, listagem e busca de informacoes.
-- Possui dados iniciais para demonstracao.
-- Esta organizado em classes, metodos e pacotes.
-
-O projeto demonstra, de forma pratica, como estruturas de dados podem ser aplicadas em um sistema com interface grafica e organizacao MVC.
